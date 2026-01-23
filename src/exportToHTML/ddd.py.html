@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>ddd.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+.s4 { color: #7a7e85;}
+.s5 { color: #2aacb8;}
+.ln { color: #4b5059; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+ddd.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">try</span><span class="s1">:</span>
+<a name="l2"><span class="ln">2    </span></a>    <span class="s0">import </span><span class="s2">pandas </span><span class="s0">as </span><span class="s2">pd</span>
+<a name="l3"><span class="ln">3    </span></a>
+<a name="l4"><span class="ln">4    </span></a>    <span class="s2">print</span><span class="s1">(</span><span class="s3">&quot;✅ Pandas 安装成功！&quot;</span><span class="s1">)</span>
+<a name="l5"><span class="ln">5    </span></a>    <span class="s2">print</span><span class="s1">(</span><span class="s3">&quot;版本号:&quot;</span><span class="s1">, </span><span class="s2">pd</span><span class="s1">.</span><span class="s2">__version__</span><span class="s1">)</span>
+<a name="l6"><span class="ln">6    </span></a>
+<a name="l7"><span class="ln">7    </span></a>    <span class="s4"># 尝试创建一个小型测试表</span>
+<a name="l8"><span class="ln">8    </span></a>    <span class="s2">data </span><span class="s1">= {</span><span class="s3">'币种'</span><span class="s1">: [</span><span class="s3">'ETH'</span><span class="s1">, </span><span class="s3">'BTC'</span><span class="s1">], </span><span class="s3">'价格'</span><span class="s1">: [</span><span class="s5">2400</span><span class="s1">, </span><span class="s5">65000</span><span class="s1">]}</span>
+<a name="l9"><span class="ln">9    </span></a>    <span class="s2">df </span><span class="s1">= </span><span class="s2">pd</span><span class="s1">.</span><span class="s2">DataFrame</span><span class="s1">(</span><span class="s2">data</span><span class="s1">)</span>
+<a name="l10"><span class="ln">10   </span></a>    <span class="s2">print</span><span class="s1">(</span><span class="s3">&quot;</span><span class="s0">\n</span><span class="s3">测试数据表如下：&quot;</span><span class="s1">)</span>
+<a name="l11"><span class="ln">11   </span></a>    <span class="s2">print</span><span class="s1">(</span><span class="s2">df</span><span class="s1">)</span>
+<a name="l12"><span class="ln">12   </span></a><span class="s0">except </span><span class="s2">ImportError</span><span class="s1">:</span>
+<a name="l13"><span class="ln">13   </span></a>    <span class="s2">print</span><span class="s1">(</span><span class="s3">&quot;❌ Pandas 未安装成功，请检查环境。&quot;</span><span class="s1">)</span>
+<a name="l14"><span class="ln">14   </span></a></pre>
+</body>
+</html>
